@@ -1,0 +1,38 @@
+ *{
+    /* top:10vh; */
+    left:20vh;
+    bottom: 10vh;
+  }
+ 
+  #formContainer .card{
+      align-content: center;
+     /* left: 60%; */
+     
+     top: 20px;
+     width:80%;
+     display: inline-block;
+     
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+  h2,i{
+      color: #13034b;
+  }
+  
+  .btn{
+      border-radius: 100px;
+      margin:20px;
+      background-color: #13034b;
+  }
+  
+  .card-header{
+      color: hsl(253, 92%, 15%);
+      font-size: larger;
+  }
+
+  .alert{
+      left:0 !important;
+  } 
+   

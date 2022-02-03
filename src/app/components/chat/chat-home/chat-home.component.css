@@ -1,0 +1,26 @@
+h5{
+    color: #13034b;
+}
+
+
+.add{
+    background-color: #13034b;
+    color: rgb(235, 230, 230);
+    padding: 3px;
+    margin-left: 15%;
+    cursor: pointer;  
+}
+
+td img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+}
+
+td {
+    text-align: center;
+    justify-content: center;
+}
+form{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,37 @@
+/* *{
+    top:10vh;
+    left:20vh;
+    bottom: 10vh;
+  }
+  #imageContainer{
+      
+      background-size:contain;
+      background-repeat: no-repeat;
+      height: 70vh;
+      width: 80vw;
+  }
+  
+  #formContainer .card{
+     left: 0;
+     top: 20px;
+     width:80%;
+  }
+  
+  h2,i{
+      color: #13034b;
+  }
+  
+  .btn{
+      border-radius: 100px;
+      margin:20px;
+      background-color: #13034b;
+  }
+  
+  .card-header{
+      color: #13034b;
+      font-size: larger;
+  }
+  
+  .alert{
+      left:0 !important;
+  } */

@@ -1,0 +1,86 @@
+.container{
+    top:5%;
+}
+
+.infoBar{
+    background-color: rgb(9, 109, 84);
+}
+
+.toName{
+    font-size: large;
+    color: whitesmoke;
+}
+span .opt button{
+   padding: 3px;
+   margin:3px;
+  
+}
+
+.infoBar span{
+    margin-right:10px;
+}
+.messages{
+    height: 60vh;
+    background-image: url('https://support.delta.chat/uploads/default/768ded5ffbef90faa338761be1c5633d91cc35e3');
+    background-position: center;
+    overflow-y: scroll !important;
+    
+}
+
+.my-message{
+   
+    max-width:35vw;
+    margin-left:40vw;   
+}
+
+.contact-message{
+   
+    max-width:25vw;
+    margin-right:0;
+}
+
+.messageBody{
+    min-height:fit-content;
+    min-width: fit-content;
+    max-width:35vw;
+    background-color: rgb(198, 212, 198);
+}
+img{
+    width:100px;
+    height: 100px;
+}
+
+.userHandle{
+    font-size: small;
+    height: 30px;
+    background-color: green;
+    color: white;
+}
+
+.my-message .userHandle{
+    background-color: rgb(9, 109, 84);
+    color: white
+}
+
+.contact-message .userHandle{
+    background-color: white;
+    color:rgb(9, 109, 84);
+}
+
+.my-message .userHandle .menu{
+    margin-left:85%;
+    cursor: pointer;
+    color: white
+}
+
+
+.contact-message .userHandle .menu{
+    margin-left:50%;
+    /* margin-top:-15px; */
+    cursor: pointer;
+    color:rgb(9, 109, 84);
+}
+
+/* .modal1{
+    width:200px;
+} */

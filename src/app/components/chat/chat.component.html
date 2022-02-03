@@ -1,0 +1,81 @@
+<div class="chat">
+    <h2 class="header">ChatApp 
+        <span class="username"> Welcome {{username}}</span>
+        <span class="logout" (click)="_auth.logOutUser()" style="cursor: pointer;"> Logout <i class="fas fa-sign-out-alt"></i></span></h2>
+    
+    <div class="row">
+    <div id="users" class="col-lg-3">
+
+        <div class="contacts">
+            <h4 class="header-contact"> My Contacts <i class="far fa-address-book"></i></h4>
+                    <form class="d-flex input-group w-auto">
+                        <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Find my contact "
+                        aria-label="Find"
+                        />
+                        <button
+                        class="btn btn-outline-success"
+                        type="button"
+                        data-mdb-ripple-color="dark"
+                        >
+                        Find <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <div class="contactlist">
+                  
+                    <span class="usertypes" (click)="DisplayContacts()">My Contacts</span>  <span class="usertypes" (click)="DisplayOnlineUsers()">Online Users</span>  
+                  
+                    <table class="table table-striped table-hover" *ngIf="displayOnlineUsers">
+                        <tbody>   
+                          <div *ngIf="onlineUserList.length <=1 " class="text-center" style="color: green;">No Users Online    </div>
+                    
+                          <tr *ngFor = "let i of onlineUserList" >
+                            <div *ngIf="i.user != username" (click)="createRoom(i)" >
+                              <td style="margin-top:20px;">{{i.user}}</td>
+                            </div>
+                          </tr>                
+                        </tbody>
+                      </table>
+                      <table class="table table-striped table-hover" *ngIf="displayMyContacts">
+                        <tbody>
+                          <div *ngIf="contactsList.length <1" class="text-center" style="color: green;">No Users Online </div>
+
+                          <tr *ngFor = "let i of contactsList" >
+                            <div *ngIf="!i.isMuted" (click)="createRoomwithContact(i.name)" >
+                              
+                              <td style="margin-top:20px;">{{i.name}}</td>
+                            </div>
+                            </tr>
+                              
+                              <div class="mutedContact" style="margin-left: 10px;"> <B>Muted Contacts</B></div>
+                              <tr  *ngFor = "let i of contactsList" >
+                              <div *ngIf="i.isMuted" (click)="createRoomwithContact(i.name)" >
+                                <td style="margin-top:20px;">{{i.name}}</td>
+                              </div>
+                              </tr>                
+                        </tbody>
+                      </table>
+                    </div> <br>
+
+        </div>
+
+    </div>
+    <div id="chat-space" class="col-lg-9">
+        <router-outlet></router-outlet>
+    </div>
+
+    </div>
+</div>
+
+<div class="modal" id="changeDPModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+      </div>
+      
+    </div>
+  </div>
+</div>
