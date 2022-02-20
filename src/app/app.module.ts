@@ -18,13 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {SocketService} from '../app/services/socket.service';
-
-
-
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { SignupComponent } from './components/signup/signup.component';
 import { HomeComponent } from './components/home/home.component';
-
 
 import { AuthGuard } from './auth.guard';
 import { ChatComponent } from './components/chat/chat.component';
@@ -49,6 +46,7 @@ import { ChatRoomComponent } from './components/chat/chat-room/chat-room.compone
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
+    // AngularFontAwesomeModule 
     // SocketIoModule.forRoot()
     
   

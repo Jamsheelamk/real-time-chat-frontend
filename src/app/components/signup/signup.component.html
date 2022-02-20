@@ -1,11 +1,11 @@
 <main>
     <div class="row">
         
-            <header><h2>SignUp</h2></header>
+            <header><h2 style="text-align: center;">SignUp</h2></header>
  
-
+<img src="../../../assets/uploads/group-chat-concept-illustration_114360-1495.jpg" alt="">
         
-        <div id="formContainer" class="col-lg-5">
+        <div id="formContainer" class="col-lg-5" style="margin-left: 32%;">
 
               <div class="card text-center shadow">
                 <div class="alert alert-danger text-center" *ngIf="errorMsg">
@@ -15,10 +15,10 @@
                     {{successMsg}}
                 </div>
              
-             <div class="card-body">
+             <div class="card-body" >
             
                  
-                 <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+                 <form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate >
             
                     <div class="form-group">
                         <label>Email</label>

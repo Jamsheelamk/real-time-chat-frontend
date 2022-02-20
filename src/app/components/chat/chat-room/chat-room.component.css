@@ -2,8 +2,13 @@
     top:5%;
 }
 
+
+#but{
+    color:black
+}
+
 .infoBar{
-    background-color: rgb(9, 109, 84);
+    background-color: rgb(54, 186, 219);
 }
 
 .toName{
@@ -21,7 +26,7 @@ span .opt button{
 }
 .messages{
     height: 60vh;
-    background-image: url('https://support.delta.chat/uploads/default/768ded5ffbef90faa338761be1c5633d91cc35e3');
+    background-image: url('https://qph.fs.quoracdn.net/main-qimg-6a21920c78cd26d7877965ed2961eda8');
     background-position: center;
     overflow-y: scroll !important;
     
@@ -43,7 +48,7 @@ span .opt button{
     min-height:fit-content;
     min-width: fit-content;
     max-width:35vw;
-    background-color: rgb(198, 212, 198);
+    background-color: rgb(106, 153, 161);
 }
 img{
     width:100px;
@@ -53,18 +58,18 @@ img{
 .userHandle{
     font-size: small;
     height: 30px;
-    background-color: green;
+    background-color: rgb(145, 208, 224);
     color: white;
 }
 
 .my-message .userHandle{
-    background-color: rgb(9, 109, 84);
+    background-color: rgb(141, 192, 216);
     color: white
 }
 
 .contact-message .userHandle{
     background-color: white;
-    color:rgb(9, 109, 84);
+    color:rgb(160, 216, 233);
 }
 
 .my-message .userHandle .menu{
@@ -78,9 +83,13 @@ img{
     margin-left:50%;
     /* margin-top:-15px; */
     cursor: pointer;
-    color:rgb(9, 109, 84);
+    color:rgb(114, 170, 184);
 }
 
-/* .modal1{
+.modal1{
     width:200px;
-} */
+}
+.modal-body{
+
+    height:5cm;
+}

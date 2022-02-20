@@ -45,7 +45,7 @@ this.id = sessionStorage.getItem('userId');
 this._auth.getUser(this.id).subscribe((data)=>{
 this.user=JSON.parse(JSON.stringify(data));
 console.log('LOGGED IN USER DATA-',this.user);
-// console.log('Contact Users-',this.user.contacts);
+
 this.contactsList=this.user.contacts;
 console.log('Contact Users-',this.contactsList);
 
@@ -110,20 +110,6 @@ if (event.target.files.length > 0) {
 }
 }
 
-changeDP(dpForm:NgForm){
-const formData = new FormData();
-formData.append('file', this.images);
-this._action.uploadImage(formData)
-.subscribe(
-(res) => {console.log(res)
-          this.user.image=res.filename;
-          this._action.changeDP(this.user,this.id)
-          .subscribe(
-            (res) => console.log('Sucessfully changed DP')
-          )
-          }
-)
 
-}
 
 }

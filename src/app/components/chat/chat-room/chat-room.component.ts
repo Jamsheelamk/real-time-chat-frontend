@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-// import {Moment} from 'moment';  
 
 import {SocketService} from '../../../services/socket.service'
 import {ActionService} from '../../../services/action.service' 
@@ -27,6 +26,7 @@ export class ChatRoomComponent implements OnInit {
     password:'',
     image:'',
     contacts:[]
+    
   }
   
   room=sessionStorage.getItem('roomName');
@@ -36,7 +36,8 @@ export class ChatRoomComponent implements OnInit {
   newMessage='';
   forwardedMessage:string='';
   forwardedImage:any;
-
+  displayOnlineUsers=true;
+  onlineUserList:any =[];
 
   isBlocked:boolean | undefined;
   isMuted:boolean | undefined;
@@ -47,6 +48,8 @@ export class ChatRoomComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
 
     this._auth.getUser(this.id).subscribe((data)=>{
       this.user=JSON.parse(JSON.stringify(data));
@@ -63,6 +66,12 @@ export class ChatRoomComponent implements OnInit {
       });
 
     })
+
+
+
+
+    
+   
 
     this._action.loadChatHistory(this.room).subscribe((chats) =>{
       console.log('chats history',chats)
@@ -87,6 +96,13 @@ export class ChatRoomComponent implements OnInit {
     })
    
   }
+
+
+
+  // DisplayOnlineUsers(){
+   
+  //   this.displayOnlineUsers=true;
+  //   }
 
    sendMessage(){
      console.log('new message-', this.newMessage);
@@ -169,12 +185,7 @@ export class ChatRoomComponent implements OnInit {
       var roomalt=i.name+this.username;
       var rooms=room+"."+roomalt;
       this._socket.emit('sendMessage', {room:rooms, message:this.forwardedMessage, from: this.username,to:i.name,image:this.forwardedImage,isForwarded:true});
-      alert('Successfully Forwarded!')
+      alert(' Forwarded!')
     };
-  
-
-
-  
-
   
 }

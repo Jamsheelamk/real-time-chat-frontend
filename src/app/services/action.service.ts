@@ -31,31 +31,29 @@ export class ActionService {
   }
 
   searchUser(username:any){
-    return this._http.post<any>(this._url+'user/searchUser',{username:username});
+    return this._http.post<any>(this._url+'/searchUser',{username:username});
   }
 
-  changeDP(user:User,id:any){
-    return this._http.post<any>(this._url+'user/changeDP/'+id,user);
-  }
+ 
 
   addContact(user:User,id:any){
-    return this._http.post<any>(this._url+'user/addContact/'+id,user);
+    return this._http.post<any>(this._url+'/addContact/'+id,user);
   }
 
   blockUser(toUser: string | null, id: string | null) {
-    return this._http.post<any>(this._url+'user/blockUser/'+id,{toUser:toUser});
+    return this._http.post<any>(this._url+'/blockUser/'+id,{toUser:toUser});
   }
 
   unblockUser(toUser: string | null, id: string | null) {
-    return this._http.post<any>(this._url+'user/unblockUser/'+id,{toUser:toUser});
+    return this._http.post<any>(this._url+'/unblockUser/'+id,{toUser:toUser});
   }
 
   muteUser(toUser: string | null, id: string | null) {
-    return this._http.post<any>(this._url+'user/muteUser/'+id,{toUser:toUser});
+    return this._http.post<any>(this._url+'/muteUser/'+id,{toUser:toUser});
   }
 
   unmuteUser(toUser: string | null, id: string | null) {
-    return this._http.post<any>(this._url+'user/unmuteUser/'+id,{toUser:toUser});
+    return this._http.post<any>(this._url+'/unmuteUser/'+id,{toUser:toUser});
   }
 
 

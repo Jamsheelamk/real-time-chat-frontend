@@ -1,10 +1,21 @@
+*{
+
+background-color: black;
+color: white;
+
+}
+.usertypes{
+    color: black;
+}
+
+
 .chat{
     margin-top: 10px;
     width: 100%;
     overflow: hidden;
 }
 .header{
-    background-color: #13034b;
+    background-color: #158bda;
     color: white;
     padding: 10px;
 }
@@ -23,7 +34,7 @@
 
 
 .header-contact{
-    background-color: #13034b;
+    background-color: #0888f1;
     color: white;
     padding: 5px 2px;
 }

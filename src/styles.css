@@ -2,12 +2,12 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-
-/* html,body{
+/*  
+* html,body{
     font-family: 'Pacifico', sans-serif !important;
        top:0;
     left:0;
-} */
+}  */
 
 a{
     text-decoration: none;

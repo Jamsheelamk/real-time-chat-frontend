@@ -1,13 +1,13 @@
 <div class="chat">
     <h2 class="header">ChatApp 
-        <span class="username"> Welcome {{username}}</span>
-        <span class="logout" (click)="_auth.logOutUser()" style="cursor: pointer;"> Logout <i class="fas fa-sign-out-alt"></i></span></h2>
+        <span class="username">  {{username}}</span>
+        <span class="logout" (click)="_auth.logOutUser()" style="cursor: pointer;"> Logout</span></h2>
     
     <div class="row">
     <div id="users" class="col-lg-3">
 
         <div class="contacts">
-            <h4 class="header-contact"> My Contacts <i class="far fa-address-book"></i></h4>
+            <h4 class="header-contact" >contacts<i class="far fa-address-book"></i></h4>
                     <form class="d-flex input-group w-auto">
                         <input
                         type="search"
@@ -29,7 +29,7 @@
                   
                     <table class="table table-striped table-hover" *ngIf="displayOnlineUsers">
                         <tbody>   
-                          <div *ngIf="onlineUserList.length <=1 " class="text-center" style="color: green;">No Users Online    </div>
+                          <div *ngIf="onlineUserList.length <=1 " class="text-center" style="color: rgb(25, 18, 131);">No Users Online    </div>
                     
                           <tr *ngFor = "let i of onlineUserList" >
                             <div *ngIf="i.user != username" (click)="createRoom(i)" >

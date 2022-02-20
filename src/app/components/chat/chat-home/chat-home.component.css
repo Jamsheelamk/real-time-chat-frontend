@@ -1,10 +1,18 @@
 h5{
-    color: #13034b;
+    color: #22bae9;
 }
 
 
+*{
+
+
+
+    background-color: black;
+    color:white;
+}
+
 .add{
-    background-color: #13034b;
+    background-color: #3aa7da;
     color: rgb(235, 230, 230);
     padding: 3px;
     margin-left: 15%;
